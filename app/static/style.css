@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+form {
+    margin: 20px auto;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+audio {
+    margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+# Entorno virtual
+venv/
+__pycache__/
+*.pyc
+
+# Archivos de configuración
+.env
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de sistema
+*.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos de salida de compilación
+dist/
+build/
+
+# Configuración de IDE
+.idea/
+.vscode/
+
+# Modelos de IA
+modelos_ia/

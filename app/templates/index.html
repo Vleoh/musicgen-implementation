@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Música</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Generador de Música con MusicGen</h1>
+    <form method="POST">
+        <label for="description">Descripción de la canción:</label>
+        <input type="text" id="description" name="description" placeholder="Ej: Una melodía relajante en piano">
+        <button type="submit">Generar Música</button>
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    {% if audio_file %}
+        <h2>Audio Generado:</h2>
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/wav">
+            Tu navegador no soporta audio.
+        </audio>
+        <br>
+        <a href="/download/{{ audio_file.split('/')[-1] }}">Descargar Audio</a>
+    {% endif %}
+</body>
+</html>

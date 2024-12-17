@@ -1,0 +1,4 @@
+flask
+audiocraft
+pydub
+soundfile
